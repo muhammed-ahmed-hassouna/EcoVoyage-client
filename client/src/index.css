@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap");
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.custom-calendar .react-datepicker__day--selected {
+  background-color: #0f766e;
+  color: white; /* Optional: Set text color to ensure visibility */
+}
+
+.custom-calendar .react-datepicker__day--in-selecting-range {
+  background-color: #0f766e;
+  color: white; /* Optional: Set text color to ensure visibility */
+}
+
+.custom-calendar .react-datepicker__day--in-selecting-range:hover{
+  background-color: #0f766e;
+}
+.custom-calendar .react-datepicker__day--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range){
+  background-color: #0F766E99;
+}
